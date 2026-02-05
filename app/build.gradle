@@ -22,15 +22,11 @@ dependencies {
     implementation 'androidx.core:core-ktx:1.12.0'
     implementation 'androidx.appcompat:appcompat:1.6.1'
 
-    // Fix: Using 4.5.LTS - it is the most indexed version on Maven Central
-    implementation 'com.arthenica:ffmpeg-kit-full-gpl:4.5.LTS'
-
-    // Fix: Using the official path for SRT
-    implementation 'io.github.thibaultbee:srt-android:1.4.1'
-
-    // Root Support (from JitPack)
+    // Bulletproof coordinates for MavenCentral
+    implementation 'com.arthenica:ffmpeg-kit-full-gpl:6.0-2.LTS'
+    implementation 'io.github.thibaultbee:srt-android:1.5.1'
+    
+    // Root & Hooking
     implementation 'com.github.topjohnwu.libsu:core:5.2.2'
-
-    // LSPosed API
     compileOnly 'org.lsposed.lsposed:api:1.0.3'
 }

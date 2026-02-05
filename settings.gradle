@@ -10,16 +10,9 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
-        // This filter tells Gradle: "Only look in JitPack for libsu"
-        maven { 
-            url 'https://jitpack.io' 
-            content {
-                includeGroup "com.github.topjohnwu.libsu"
-            }
-        }
+        maven { url 'https://jitpack.io' } // Only for libsu
     }
 }
-
 rootProject.name = "vircam"
 include ':app'
 include ':lsposed-module'
