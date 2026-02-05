@@ -1,0 +1,9 @@
+{
+  "name":"VircamHook",
+  "version":"1.0",
+  "author":"you",
+  "description":"Hook CameraService to inject OBS frames",
+  "minApiVersion":93,
+  "targetApiVersion":100,
+  "packages":["android"]
+}
